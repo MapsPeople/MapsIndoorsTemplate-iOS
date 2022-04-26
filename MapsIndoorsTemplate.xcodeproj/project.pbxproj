@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D48319D275678BD0040E371 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D48319C275678BD0040E371 /* README.md */; };
+		2D59A44C274FB10E00F10BEB /* MapsIndoorsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D59A44B274FB10E00F10BEB /* MapsIndoorsSearch.swift */; };
+		2D59A44F274FB9AB00F10BEB /* DirectionsGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D59A44E274FB9AB00F10BEB /* DirectionsGuideView.swift */; };
+		2D76047027998EC300824F03 /* default_googlemaps_style.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D76046E27998EAB00824F03 /* default_googlemaps_style.json */; };
+		2DAC3F9A274FDC7700EC3164 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC3F99274FDC7700EC3164 /* PagingView.swift */; };
+		2DAC3F9C274FDD9B00EC3164 /* DirectionGuideLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC3F9B274FDD9B00EC3164 /* DirectionGuideLeg.swift */; };
+		2DAC3F9E274FE14000EC3164 /* MapsIndoorsDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC3F9D274FE14000EC3164 /* MapsIndoorsDirections.swift */; };
+		6D5F577B17276D5797603DB3 /* Pods_MapsIndoorsTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B984C502456A0A9FBB57530 /* Pods_MapsIndoorsTemplate.framework */; };
+		C8C91C1027F48759008320AF /* locationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C91C0F27F48759008320AF /* locationModel.swift */; };
+		DC0DC2B42751110E0003ED56 /* CategoryLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC2B32751110E0003ED56 /* CategoryLister.swift */; };
+		DC0E26C9274532F500DFF5AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0E26B9274532F500DFF5AC /* Assets.xcassets */; };
+		DC0E26CA274532F500DFF5AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0E26BA274532F500DFF5AC /* LaunchScreen.storyboard */; };
+		DC0E26CB274532F500DFF5AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0E26BC274532F500DFF5AC /* Main.storyboard */; };
+		DC0E26CC274532F500DFF5AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E26BE274532F500DFF5AC /* AppDelegate.swift */; };
+		DC0E26CF274532F500DFF5AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E26C3274532F500DFF5AC /* ViewController.swift */; };
+		DC0E26D0274532F500DFF5AC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E26C4274532F500DFF5AC /* SearchView.swift */; };
+		DC0E26D2274532F500DFF5AC /* LocationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E26C6274532F500DFF5AC /* LocationResult.swift */; };
+		DC0E26D4274532F500DFF5AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E26C8274532F500DFF5AC /* SceneDelegate.swift */; };
+		DC0E26D82745363500DFF5AC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E26D72745363500DFF5AC /* DetailView.swift */; };
+		DC229A4F275783B0003A331F /* MapsIndoors-Info-Sample.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC229A4E275783B0003A331F /* MapsIndoors-Info-Sample.plist */; };
+		DC229A56275850B6003A331F /* EmptyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC229A55275850B6003A331F /* EmptyList.swift */; };
+		DC2D5C952747BC2B00E20D2E /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2D5C942747BC2B00E20D2E /* DirectionsView.swift */; };
+		DC3AF0C82754EFA500391675 /* SearchBarWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3AF0C72754EFA500391675 /* SearchBarWithText.swift */; };
+		DC3AF0CA2754F20A00391675 /* KeyboardServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3AF0C92754F20A00391675 /* KeyboardServices.swift */; };
+		DC3F8D2D2746425600761CA9 /* MapsIndoorsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F8D2C2746425600761CA9 /* MapsIndoorsMap.swift */; };
+		DC563F82278851FE005F8E6C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC563F81278851FE005F8E6C /* View.swift */; };
+		DC563F8727888782005F8E6C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC563F8627888782005F8E6C /* Icon.swift */; };
+		DC5997D9274BDD6400B3D3E9 /* SearchBarWithSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5997D8274BDD6400B3D3E9 /* SearchBarWithSymbol.swift */; };
+		DCA3634327454DD900237420 /* MapsIndoorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3634227454DD900237420 /* MapsIndoorsView.swift */; };
+		DCCD1F582747F3A500D7A34B /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD1F572747F3A500D7A34B /* CloseButton.swift */; };
+		DCCD1F5A2747F3B500D7A34B /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD1F592747F3B500D7A34B /* BlueButton.swift */; };
+		DCECAB6D2758F18100B45270 /* LocationInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCECAB6C2758F18100B45270 /* LocationInformation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D48319C275678BD0040E371 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2D59A44B274FB10E00F10BEB /* MapsIndoorsSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsIndoorsSearch.swift; sourceTree = "<group>"; };
+		2D59A44E274FB9AB00F10BEB /* DirectionsGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsGuideView.swift; sourceTree = "<group>"; };
+		2D6C1BAC2743AE7000A81900 /* MapsIndoorsTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsIndoorsTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D76046E27998EAB00824F03 /* default_googlemaps_style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default_googlemaps_style.json; sourceTree = "<group>"; };
+		2DAC3F99274FDC7700EC3164 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		2DAC3F9B274FDD9B00EC3164 /* DirectionGuideLeg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionGuideLeg.swift; sourceTree = "<group>"; };
+		2DAC3F9D274FE14000EC3164 /* MapsIndoorsDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsIndoorsDirections.swift; sourceTree = "<group>"; };
+		3B984C502456A0A9FBB57530 /* Pods_MapsIndoorsTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapsIndoorsTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		584E1472B27338A1FDA6A208 /* Pods-MapsIndoorsTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsIndoorsTemplate.release.xcconfig"; path = "Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		AAB9D1A471AC27F609CE5CEF /* Pods-MapsIndoorsTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsIndoorsTemplate.debug.xcconfig"; path = "Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		C8C91C0F27F48759008320AF /* locationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationModel.swift; sourceTree = "<group>"; };
+		DC0DC2B32751110E0003ED56 /* CategoryLister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryLister.swift; sourceTree = "<group>"; };
+		DC0E26B9274532F500DFF5AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC0E26BB274532F500DFF5AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC0E26BD274532F500DFF5AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC0E26BE274532F500DFF5AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC0E26C3274532F500DFF5AC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC0E26C4274532F500DFF5AC /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		DC0E26C6274532F500DFF5AC /* LocationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationResult.swift; sourceTree = "<group>"; };
+		DC0E26C7274532F500DFF5AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0E26C8274532F500DFF5AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC0E26D72745363500DFF5AC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DC229A4E275783B0003A331F /* MapsIndoors-Info-Sample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MapsIndoors-Info-Sample.plist"; sourceTree = "<group>"; };
+		DC229A55275850B6003A331F /* EmptyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyList.swift; sourceTree = "<group>"; };
+		DC2D5C942747BC2B00E20D2E /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
+		DC3AF0C72754EFA500391675 /* SearchBarWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarWithText.swift; sourceTree = "<group>"; };
+		DC3AF0C92754F20A00391675 /* KeyboardServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardServices.swift; sourceTree = "<group>"; };
+		DC3F8D2C2746425600761CA9 /* MapsIndoorsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsIndoorsMap.swift; sourceTree = "<group>"; };
+		DC563F81278851FE005F8E6C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DC563F8627888782005F8E6C /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		DC5997D8274BDD6400B3D3E9 /* SearchBarWithSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarWithSymbol.swift; sourceTree = "<group>"; };
+		DCA3634227454DD900237420 /* MapsIndoorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsIndoorsView.swift; sourceTree = "<group>"; };
+		DCCD1F572747F3A500D7A34B /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		DCCD1F592747F3B500D7A34B /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		DCECAB6C2758F18100B45270 /* LocationInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D6C1BA92743AE7000A81900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5F577B17276D5797603DB3 /* Pods_MapsIndoorsTemplate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D59A44D274FB11400F10BEB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D59A44B274FB10E00F10BEB /* MapsIndoorsSearch.swift */,
+				2DAC3F9D274FE14000EC3164 /* MapsIndoorsDirections.swift */,
+				DC0DC2B32751110E0003ED56 /* CategoryLister.swift */,
+				DC3AF0C92754F20A00391675 /* KeyboardServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D6C1BA32743AE7000A81900 = {
+			isa = PBXGroup;
+			children = (
+				2D48319C275678BD0040E371 /* README.md */,
+				DC0E26B8274532F500DFF5AC /* MapsIndoorsTemplate */,
+				2D6C1BAD2743AE7000A81900 /* Products */,
+				F7B373E1BAB83E4817D2542C /* Pods */,
+				AB8384C2290F0A3FCA3BC271 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D6C1BAD2743AE7000A81900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D6C1BAC2743AE7000A81900 /* MapsIndoorsTemplate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB8384C2290F0A3FCA3BC271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B984C502456A0A9FBB57530 /* Pods_MapsIndoorsTemplate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC0E26B8274532F500DFF5AC /* MapsIndoorsTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				2D76046E27998EAB00824F03 /* default_googlemaps_style.json */,
+				DC229A4E275783B0003A331F /* MapsIndoors-Info-Sample.plist */,
+				DC0E26C7274532F500DFF5AC /* Info.plist */,
+				DC0E26B9274532F500DFF5AC /* Assets.xcassets */,
+				DC0E26BA274532F500DFF5AC /* LaunchScreen.storyboard */,
+				DC0E26BC274532F500DFF5AC /* Main.storyboard */,
+				DC0E26BE274532F500DFF5AC /* AppDelegate.swift */,
+				DC0E26C8274532F500DFF5AC /* SceneDelegate.swift */,
+				DC0E26C3274532F500DFF5AC /* ViewController.swift */,
+				DC0E26C2274532F500DFF5AC /* Views */,
+				2D59A44D274FB11400F10BEB /* Services */,
+			);
+			path = MapsIndoorsTemplate;
+			sourceTree = "<group>";
+		};
+		DC0E26C2274532F500DFF5AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC563F80278851E8005F8E6C /* Extensions */,
+				DCCD1F562747F37F00D7A34B /* Components */,
+				DC0E26C4274532F500DFF5AC /* SearchView.swift */,
+				DC0E26D72745363500DFF5AC /* DetailView.swift */,
+				C8C91C0F27F48759008320AF /* locationModel.swift */,
+				DC2D5C942747BC2B00E20D2E /* DirectionsView.swift */,
+				DC0E26C6274532F500DFF5AC /* LocationResult.swift */,
+				DCA3634227454DD900237420 /* MapsIndoorsView.swift */,
+				DC3F8D2C2746425600761CA9 /* MapsIndoorsMap.swift */,
+				2D59A44E274FB9AB00F10BEB /* DirectionsGuideView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC563F80278851E8005F8E6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC563F81278851FE005F8E6C /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCCD1F562747F37F00D7A34B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD1F572747F3A500D7A34B /* CloseButton.swift */,
+				DCCD1F592747F3B500D7A34B /* BlueButton.swift */,
+				DC5997D8274BDD6400B3D3E9 /* SearchBarWithSymbol.swift */,
+				2DAC3F99274FDC7700EC3164 /* PagingView.swift */,
+				2DAC3F9B274FDD9B00EC3164 /* DirectionGuideLeg.swift */,
+				DC3AF0C72754EFA500391675 /* SearchBarWithText.swift */,
+				DCECAB6C2758F18100B45270 /* LocationInformation.swift */,
+				DC229A55275850B6003A331F /* EmptyList.swift */,
+				DC563F8627888782005F8E6C /* Icon.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F7B373E1BAB83E4817D2542C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAB9D1A471AC27F609CE5CEF /* Pods-MapsIndoorsTemplate.debug.xcconfig */,
+				584E1472B27338A1FDA6A208 /* Pods-MapsIndoorsTemplate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D6C1BAB2743AE7000A81900 /* MapsIndoorsTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D6C1BC02743AE7200A81900 /* Build configuration list for PBXNativeTarget "MapsIndoorsTemplate" */;
+			buildPhases = (
+				078348DEA6E52B1DEB74D613 /* [CP] Check Pods Manifest.lock */,
+				2D6C1BA82743AE7000A81900 /* Sources */,
+				2D6C1BA92743AE7000A81900 /* Frameworks */,
+				2D6C1BAA2743AE7000A81900 /* Resources */,
+				33788046913EAD516BC49ED1 /* [CP] Embed Pods Frameworks */,
+				500EFC959A198513F930FF24 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapsIndoorsTemplate;
+			productName = SinglePageMap;
+			productReference = 2D6C1BAC2743AE7000A81900 /* MapsIndoorsTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D6C1BA42743AE7000A81900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2D6C1BAB2743AE7000A81900 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 2D6C1BA72743AE7000A81900 /* Build configuration list for PBXProject "MapsIndoorsTemplate" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D6C1BA32743AE7000A81900;
+			productRefGroup = 2D6C1BAD2743AE7000A81900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D6C1BAB2743AE7000A81900 /* MapsIndoorsTemplate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D6C1BAA2743AE7000A81900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D76047027998EC300824F03 /* default_googlemaps_style.json in Resources */,
+				DC0E26CB274532F500DFF5AC /* Main.storyboard in Resources */,
+				DC0E26C9274532F500DFF5AC /* Assets.xcassets in Resources */,
+				2D48319D275678BD0040E371 /* README.md in Resources */,
+				DC229A4F275783B0003A331F /* MapsIndoors-Info-Sample.plist in Resources */,
+				DC0E26CA274532F500DFF5AC /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		078348DEA6E52B1DEB74D613 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapsIndoorsTemplate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33788046913EAD516BC49ED1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500EFC959A198513F930FF24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D6C1BA82743AE7000A81900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0E26D0274532F500DFF5AC /* SearchView.swift in Sources */,
+				DCA3634327454DD900237420 /* MapsIndoorsView.swift in Sources */,
+				DC563F8727888782005F8E6C /* Icon.swift in Sources */,
+				DC2D5C952747BC2B00E20D2E /* DirectionsView.swift in Sources */,
+				DC0E26D82745363500DFF5AC /* DetailView.swift in Sources */,
+				2D59A44C274FB10E00F10BEB /* MapsIndoorsSearch.swift in Sources */,
+				DCECAB6D2758F18100B45270 /* LocationInformation.swift in Sources */,
+				DCCD1F582747F3A500D7A34B /* CloseButton.swift in Sources */,
+				DC0E26D4274532F500DFF5AC /* SceneDelegate.swift in Sources */,
+				C8C91C1027F48759008320AF /* locationModel.swift in Sources */,
+				2D59A44F274FB9AB00F10BEB /* DirectionsGuideView.swift in Sources */,
+				DC563F82278851FE005F8E6C /* View.swift in Sources */,
+				DC0E26CF274532F500DFF5AC /* ViewController.swift in Sources */,
+				DC229A56275850B6003A331F /* EmptyList.swift in Sources */,
+				DC3F8D2D2746425600761CA9 /* MapsIndoorsMap.swift in Sources */,
+				DC3AF0C82754EFA500391675 /* SearchBarWithText.swift in Sources */,
+				DC3AF0CA2754F20A00391675 /* KeyboardServices.swift in Sources */,
+				DCCD1F5A2747F3B500D7A34B /* BlueButton.swift in Sources */,
+				2DAC3F9E274FE14000EC3164 /* MapsIndoorsDirections.swift in Sources */,
+				2DAC3F9A274FDC7700EC3164 /* PagingView.swift in Sources */,
+				DC0E26D2274532F500DFF5AC /* LocationResult.swift in Sources */,
+				DC0DC2B42751110E0003ED56 /* CategoryLister.swift in Sources */,
+				DC0E26CC274532F500DFF5AC /* AppDelegate.swift in Sources */,
+				DC5997D9274BDD6400B3D3E9 /* SearchBarWithSymbol.swift in Sources */,
+				2DAC3F9C274FDD9B00EC3164 /* DirectionGuideLeg.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC0E26BA274532F500DFF5AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC0E26BB274532F500DFF5AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC0E26BC274532F500DFF5AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC0E26BD274532F500DFF5AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D6C1BBE2743AE7200A81900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D6C1BBF2743AE7200A81900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D6C1BC12743AE7200A81900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB9D1A471AC27F609CE5CEF /* Pods-MapsIndoorsTemplate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A8V6656PYZ;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MapsIndoorsTemplate/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location can be used to help find your way round.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mapspeople.MapsIndoorsTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D6C1BC22743AE7200A81900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584E1472B27338A1FDA6A208 /* Pods-MapsIndoorsTemplate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A8V6656PYZ;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MapsIndoorsTemplate/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location can be used to help find your way round.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mapspeople.MapsIndoorsTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D6C1BA72743AE7000A81900 /* Build configuration list for PBXProject "MapsIndoorsTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6C1BBE2743AE7200A81900 /* Debug */,
+				2D6C1BBF2743AE7200A81900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D6C1BC02743AE7200A81900 /* Build configuration list for PBXNativeTarget "MapsIndoorsTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6C1BC12743AE7200A81900 /* Debug */,
+				2D6C1BC22743AE7200A81900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D6C1BA42743AE7000A81900 /* Project object */;
+}
