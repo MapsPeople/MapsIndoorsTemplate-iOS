@@ -1,13 +1,13 @@
 # Using the MapsIndoors Template App
 
-To get started with MapsIndoors IOS SDK follow the description in the [MapsIndoors Getting Started guide](https://docs.mapsindoors.com/ios/v3/getting-started/prerequisites/) to get an API key for MapsIndoors and Google. 
+To get started with MapsIndoors iOS SDK follow the description in the [MapsIndoors Getting Started Guide](https://docs.mapsindoors.com/ios/v3/getting-started/prerequisites/) to get an API key for MapsIndoors and Google. 
 
 This app will provide an example of how to use the MapsPeople SDK in SwiftUI. 
 
 ## Getting started
 
 To get started, clone this repository and run `pod install` from the Terminal. Open the file `xxxxx.xcworkspace` in Xcode. 
-Make a copy of the `MapsIndoors-Info-Sample.plist` file and name it `MapsIndoors-Info.plist`. Add your MapsIndoors Api key and Google Maps Api key to the `MapsIndoors-Info.plist` file. Then run the project.
+Make a copy of the `MapsIndoors-Info-Sample.plist` file and name it `MapsIndoors-Info.plist`. Add your MapsIndoors API key and Google Maps API key to the `MapsIndoors-Info.plist` file. Then run the project.
 
 ## Use the functionality in your own app
 
