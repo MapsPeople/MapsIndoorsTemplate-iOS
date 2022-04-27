@@ -1,6 +1,6 @@
 //
 //  EmptyList.swift
-//  SinglePageMap
+//  MapsIndoors Template - IOS
 //
 //  Created by Shahab Shajarat on 02/12/2021.
 //

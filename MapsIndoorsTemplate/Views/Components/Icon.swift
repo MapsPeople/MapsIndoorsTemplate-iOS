@@ -1,6 +1,6 @@
 //
 //  Icon.swift
-//  SinglePageMap
+//  MapsIndoors Template - IOS
 //
 //  Created by Shahab Shajarat on 07/01/2022.
 //

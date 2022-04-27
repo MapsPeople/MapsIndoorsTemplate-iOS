@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  SinglePageMap
+//  MapsIndoors Template - IOS
 //
 //  Created by Christian Wolf Johannsen on 16/11/2021.
 //

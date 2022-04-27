@@ -1,6 +1,6 @@
 //
 //  BlueButton.swift
-//  SinglePageMap
+//  MapsIndoors Template - IOS
 //
 //  Created by Shahab Shajarat on 19/11/2021.
 //

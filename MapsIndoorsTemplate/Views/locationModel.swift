@@ -1,6 +1,6 @@
 //
 //  locationModel.swift
-//  SinglePageMap
+//  MapsIndoors Template - IOS
 //
 //  Created by Malte Myhlendorph on 30/03/2022.
 //

@@ -1,6 +1,6 @@
 //
 //  MapsIndoorsView.swift
-//  SinglePageMap
+//  MapsIndoors Template - IOS
 //
 //  Created by Shahab Shajarat on 17/11/2021.
 //

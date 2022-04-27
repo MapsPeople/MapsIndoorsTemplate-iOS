@@ -1,6 +1,6 @@
 //
 //  DirectionsGuideView.swift
-//  SinglePageMap
+//  MapsIndoors Template - IOS
 //
 //  Created by Christian Wolf Johannsen on 25/11/2021.
 //
