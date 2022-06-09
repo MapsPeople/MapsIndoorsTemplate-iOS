@@ -77,6 +77,10 @@ class MapsIndoorsMapState : ObservableObject {
             }
         }
 
+        mapControl?.showUserPosition(true)
+        MapsIndoors.positionProvider = GPSPositionProvider()
+        MapsIndoors.positionProvider?.startPositioning(nil)
+
         findAccessbilityRole()
         loadDefaultMapStyle()
     }

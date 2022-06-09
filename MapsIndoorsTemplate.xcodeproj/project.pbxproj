@@ -14,6 +14,7 @@
 		2DAC3F9A274FDC7700EC3164 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC3F99274FDC7700EC3164 /* PagingView.swift */; };
 		2DAC3F9C274FDD9B00EC3164 /* DirectionGuideLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC3F9B274FDD9B00EC3164 /* DirectionGuideLeg.swift */; };
 		2DAC3F9E274FE14000EC3164 /* MapsIndoorsDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC3F9D274FE14000EC3164 /* MapsIndoorsDirections.swift */; };
+		2DCB29B12852313C00EAE477 /* GPSPositionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCB29B02852313C00EAE477 /* GPSPositionProvider.swift */; };
 		6D5F577B17276D5797603DB3 /* Pods_MapsIndoorsTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B984C502456A0A9FBB57530 /* Pods_MapsIndoorsTemplate.framework */; };
 		C8C91C1027F48759008320AF /* locationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C91C0F27F48759008320AF /* locationModel.swift */; };
 		DC0DC2B42751110E0003ED56 /* CategoryLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC2B32751110E0003ED56 /* CategoryLister.swift */; };
@@ -50,6 +51,7 @@
 		2DAC3F99274FDC7700EC3164 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
 		2DAC3F9B274FDD9B00EC3164 /* DirectionGuideLeg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionGuideLeg.swift; sourceTree = "<group>"; };
 		2DAC3F9D274FE14000EC3164 /* MapsIndoorsDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsIndoorsDirections.swift; sourceTree = "<group>"; };
+		2DCB29B02852313C00EAE477 /* GPSPositionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSPositionProvider.swift; sourceTree = "<group>"; };
 		3B984C502456A0A9FBB57530 /* Pods_MapsIndoorsTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapsIndoorsTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		584E1472B27338A1FDA6A208 /* Pods-MapsIndoorsTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsIndoorsTemplate.release.xcconfig"; path = "Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		AAB9D1A471AC27F609CE5CEF /* Pods-MapsIndoorsTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsIndoorsTemplate.debug.xcconfig"; path = "Target Support Files/Pods-MapsIndoorsTemplate/Pods-MapsIndoorsTemplate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				2DAC3F9D274FE14000EC3164 /* MapsIndoorsDirections.swift */,
 				DC0DC2B32751110E0003ED56 /* CategoryLister.swift */,
 				DC3AF0C92754F20A00391675 /* KeyboardServices.swift */,
+				2DCB29B02852313C00EAE477 /* GPSPositionProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				DCA3634327454DD900237420 /* MapsIndoorsView.swift in Sources */,
 				DC563F8727888782005F8E6C /* Icon.swift in Sources */,
 				DC2D5C952747BC2B00E20D2E /* DirectionsView.swift in Sources */,
+				2DCB29B12852313C00EAE477 /* GPSPositionProvider.swift in Sources */,
 				DC0E26D82745363500DFF5AC /* DetailView.swift in Sources */,
 				2D59A44C274FB10E00F10BEB /* MapsIndoorsSearch.swift in Sources */,
 				DCECAB6D2758F18100B45270 /* LocationInformation.swift in Sources */,
