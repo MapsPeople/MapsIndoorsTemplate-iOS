@@ -64,7 +64,7 @@ class LegInstructions {
                         desc = "Walk from \(startAddress) to \(endAddress)"
                     }
                 } else {
-                    desc = "Take \(highway) to \(endAddress)"
+                    desc = "Take \(highway.rawValue) to \(endAddress)"
                 }
             } else if isExitingBuilding {
                 desc = "Exit \(thisLegBuilding?.name ?? "")"
@@ -111,7 +111,7 @@ class LegInstructions {
     }
 
     private var highway: MPHighwayType {
-       nextLegFirstStep.highway ?? .footway
+        nextLegFirstStep.highway ?? .footway
     }
     
     var icon: Image {
@@ -124,7 +124,7 @@ class LegInstructions {
                 iconName = "Elevator"
             case .escalator, .wheelChairRamp:
                 iconName = "Escalator"
-            case .stairs:
+            case .stairs, .ladder:
                 iconName = "Stairs"
             default:
                 iconName = "Walk"
@@ -185,5 +185,3 @@ class LegInstructions {
         buildingAt(point: lastStep.getStartPoint()!)
     }
 }
-
-
