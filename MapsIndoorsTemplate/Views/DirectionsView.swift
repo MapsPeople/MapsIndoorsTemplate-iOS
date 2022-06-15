@@ -17,16 +17,33 @@ struct DirectionsView: View {
     @Binding var gettingDirections: Bool
     @Binding var showingDirections: Bool
     
-    @State private var sourceSearchText: String = ""
-    @State private var sourceSearchResult: [MPLocation] = []
-    @State private var sourceLocation:MPLocation?
-    @State private var isSearchingSource: Bool = false
+    @State private var sourceSearchText = ""
+    @State private var sourceSearchResult = [MPLocation]()
+    @State private var sourceLocation: MPLocation?
+    @State private var isSearchingSource = false
     
-    @State private var targetSearchText: String = ""
-    @State private var targetSearchResult: [MPLocation] = []
-    @State private var targetLocation:MPLocation?
-    @State private var isSearchingTarget: Bool = false
-    @State private var initialised: Bool = false
+    @State private var targetSearchText = ""
+    @State private var targetSearchResult = [MPLocation]()
+    @State private var targetLocation: MPLocation?
+    @State private var isSearchingTarget = false
+    @State private var initialised = false
+
+    private var myLocation: Binding<MPLocation?> { Binding(
+        get: {
+            guard let positionResult = MapsIndoors.positionProvider?.latestPositionResult else {
+                return nil
+            }
+
+            let myLocationUpdate = MPLocationUpdate(location: MPLocation())
+            myLocationUpdate.name = "My Position"
+            myLocationUpdate.position = positionResult.geometry?.getCoordinate() ?? CLLocationCoordinate2D()
+            myLocationUpdate.floor = positionResult.getFloor()?.intValue ?? 0
+            myLocationUpdate.type = "my-location"
+            return myLocationUpdate.location()
+        },
+        set: { _ in }
+        )
+    }
     
     @ViewBuilder
     var transparentView: some View {
@@ -40,7 +57,7 @@ struct DirectionsView: View {
                 HeaderTap.tap()
             }
             VStack (alignment: .leading) {
-                FromSearchBar(sourceSearchText: $sourceSearchText, sourceSearchResult: $sourceSearchResult, isSearchingSource: $isSearchingSource, sourceLocation: $sourceLocation)
+                FromSearchBar(sourceSearchText: $sourceSearchText, sourceSearchResult: $sourceSearchResult, isSearchingSource: $isSearchingSource, sourceLocation: $sourceLocation, myLocation: myLocation)
                     .onTapGesture {
                         isSearchingSource = true
                         isSearchingTarget = false
@@ -48,7 +65,7 @@ struct DirectionsView: View {
                         bottomSheetPosition = .top
                         removeViewingAngle()
                     }
-                ToSearchBar(targetSearchText: $targetSearchText, targetSearchResult: $targetSearchResult, isSearchingTarget: $isSearchingTarget, targetLocation: $targetLocation)
+                ToSearchBar(targetSearchText: $targetSearchText, targetSearchResult: $targetSearchResult, isSearchingTarget: $isSearchingTarget, targetLocation: $targetLocation, myLocation: myLocation)
                     .onTapGesture {
                         isSearchingSource = false
                         isSearchingTarget = true
@@ -62,7 +79,7 @@ struct DirectionsView: View {
                 if (isSearchingSource || isSearchingTarget){
                     // If the user is *typing* into the source text field
                     if (isSearchingSource) {
-                        ResultList(searchText: $sourceSearchText, resultList: $sourceSearchResult)
+                        ResultList(searchText: $sourceSearchText, resultList: $sourceSearchResult, myLocation: myLocation)
                             .onReceive(ResultList.selection) { Output in
                                 selectSourceLocation(location: Output)
                             }
@@ -70,7 +87,7 @@ struct DirectionsView: View {
                     }
                     // Else if the user is currently *typing* into the target text field.
                     if (isSearchingTarget) {
-                        ResultList(searchText: $targetSearchText, resultList: $targetSearchResult)
+                        ResultList(searchText: $targetSearchText, resultList: $targetSearchResult, myLocation: myLocation)
                             .onReceive(ResultList.selection) { Output in
                                 selectTargetLocation(location: Output)
                                 state.mapControl?.selectedLocation = Output
@@ -158,7 +175,8 @@ struct DirectionsView: View {
         @Binding var sourceSearchResult: [MPLocation]
         @Binding var isSearchingSource: Bool
         @Binding var sourceLocation:MPLocation?
-        
+        @Binding var myLocation: MPLocation?
+
         var body: some View {
             VStack {
                 HStack {
@@ -184,6 +202,9 @@ struct DirectionsView: View {
                 .valueChanged(value: sourceSearchText) {_ in
                     MapsIndoorsSearch.locationsFromQuery(searchText: sourceSearchText, nearPosition: nil) { locations in
                         sourceSearchResult = locations
+                        if let userLocation = myLocation {
+                            sourceSearchResult.insert(userLocation, at: 0)
+                        }
                     }
                 }
         }
@@ -206,7 +227,8 @@ struct DirectionsView: View {
         @Binding var targetSearchResult: [MPLocation]
         @Binding var isSearchingTarget: Bool
         @Binding var targetLocation:MPLocation?
-        
+        @Binding var myLocation: MPLocation?
+
         var body: some View {
             VStack {
                 HStack {
@@ -240,6 +262,9 @@ struct DirectionsView: View {
                 .valueChanged(value: targetSearchText) { _ in
                     MapsIndoorsSearch.locationsFromQuery(searchText: targetSearchText, nearPosition: nil) { locations in
                         targetSearchResult = locations
+                        if let userLocation = myLocation {
+                            targetSearchResult.insert(userLocation, at: 0)
+                        }
                     }
                 }
         }
@@ -296,11 +321,12 @@ struct DirectionsView: View {
     struct ResultList: View {
         @Binding var searchText: String
         @Binding var resultList: [MPLocation]
+        @Binding var myLocation: MPLocation?
         static var selection = PassthroughSubject<MPLocation, Never>()
-        
+
         var body: some View {
             if (searchText == "") {
-                EmptyList()
+                EmptyList(myPosition: $myLocation)
             }
             else if (resultList.isEmpty){
                 ZStack (alignment: .top){

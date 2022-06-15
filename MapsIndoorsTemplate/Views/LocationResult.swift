@@ -25,7 +25,12 @@ struct LocationResult: View {
     
     //Location Icon
     var locationIcon: some View {
-        Image("Location")
+        var imageName = "Location"
+
+        if location.type == "my-location" {
+            imageName = "Mylocation"
+        }
+        return Image(imageName)
             .renderingMode(.template)
             .foregroundColor(Color(UIColor.systemOrange))
     }

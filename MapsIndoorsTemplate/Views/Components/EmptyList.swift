@@ -6,19 +6,31 @@
 //
 
 import SwiftUI
+import MapsIndoors
 
 struct EmptyList: View {
-    var helpText:String?
+    @Binding var myPosition: MPLocation?
+    var helpText: String?
+    
+    init(myPosition: Binding<MPLocation?>? = nil) {
+        self._myPosition = myPosition ?? Binding.constant(nil)
+    }
     
     var body: some View {
-        ZStack (alignment: .top){
-            List(){
-                
+        VStack {
+            if let userPosition = myPosition {
+                List() {
+                    LocationResult(location: userPosition)
+                        .onTapGesture {
+                            DirectionsView.ResultList.selectLocation(location: userPosition)
+                        }
+                }
+            } else {
+                Text(helpText ?? "Search for locations")
+                    .font(.headline)
+                    .frame(alignment: .center)
+                    .padding()
             }
-            Text(helpText ?? "Search for locations")
-                .font(.headline)
-                .frame(alignment: .center)
-                .padding()
         }
     }
 }
