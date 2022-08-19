@@ -6,7 +6,7 @@ target 'MapsIndoorsTemplate' do
   use_frameworks!
 
   pod 'MapsIndoors', '~>3.39'
-  pod 'BottomSheetSwiftUI'
+  pod 'BottomSheetSwiftUI', '~>2.8'
 end
 
 PROJECT_ROOT_DIR = File.dirname(File.expand_path(__FILE__))
